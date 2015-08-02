@@ -34,8 +34,9 @@
 //#include <iostream>
 //#include <fstream>
 
-//on 32bit systems
-//#define PRId64 "llu"
+#ifndef PRId64
+	#define PRId64 "llu"
+#endif
 
 #include "restring.h"
 
